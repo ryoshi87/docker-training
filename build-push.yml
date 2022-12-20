@@ -32,12 +32,10 @@ stages:
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
-      env:
-        SERVICE_CONNECTION: $(dockerRegistryServiceConnection)
       inputs:
         command: buildAndPush
         repository: $(imageRepository)
         dockerfile: $(dockerfilePath)
-        containerRegistry: $(SERVICE_CONNECTION)
+        containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
