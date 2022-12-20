@@ -9,7 +9,7 @@ resources:
 - repo: self
 
 variables:
-  - group: container-registry-vars
+  - group: 'container-registry-vars'
   # Container registry service connection established during pipeline creation
   - name: imageRepository
     value: 'dockertraining'
