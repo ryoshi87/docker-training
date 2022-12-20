@@ -38,6 +38,6 @@ stages:
         command: buildAndPush
         repository: $(imageRepository)
         dockerfile: $(dockerfilePath)
-        containerRegistry: $env:SERVICE_CONNECTION 
+        containerRegistry: $(SERVICE_CONNECTION)
         tags: |
           $(tag)
