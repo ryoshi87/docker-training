@@ -10,9 +10,9 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'b8434ed8-c377-4431-9fb0-dd39a180c9be'
+  dockerRegistryServiceConnection: '-'
   imageRepository: 'dockertraining'
-  containerRegistry: 'orcdfdocker.azurecr.io'
+  containerRegistry: '-'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
 
